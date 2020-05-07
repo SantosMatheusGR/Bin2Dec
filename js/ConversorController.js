@@ -7,9 +7,28 @@ class ConversorController {
     }
 
     converter_OnClick(){
-        let conversor = new Conversor(this._inputBinario.value)
-        let resultado = conversor.converterParaDecimal();
+        event.preventDefault();
+        if(this.validarInput()){
+            let resultado = this.converterParaDecimal();
+            this._spanResposta.textContent = 'Decimal: ' + resultado;
+        }
+    }
 
-        this._spanResposta.textContent = resultado;
+    converterParaDecimal(){
+        let conversor = new Conversor(this._inputBinario.value)
+        return conversor.converterParaDecimal();
+    }
+
+    validarInput(){
+        if(this._inputBinario.value == ""){
+            this._spanResposta.textContent = 'É necessário um número';
+            return false;
+        }
+        let reg = new RegExp('^[0-1]+$');
+        if(!reg.test(this._inputBinario.value)){
+            this._spanResposta.textContent = 'A entrada precisa ser um número binário';
+            return false;
+        }
+        return true;
     }
 }

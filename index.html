@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body>
+        <div>
+            <h1>CONVERSOR DE BINARIOS</h1>
+        </div>
         <div id="entrada">
-            <input type="text" id="binario" autofocus>
-            <button onclick="conversorController.converter_OnClick()">Converter</button>
+            <form>
+                <input type="text" id="binario" autofocus required>
+                <button type="submit" onclick="conversorController.converter_OnClick(event)">Converter</button>
+            </form>
         </div>
         <div id="saida">
             <span id="resposta"></span>
