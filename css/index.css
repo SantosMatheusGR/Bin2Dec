@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+input{
+    margin-top:10%;
+    font-size: 40px;
+    background-color: black;
+    color: green;
+    border-color: green;
+}
+span{
+    font-size: 40px;
+    color: black;
+    background-color: aliceblue;
+}
+button{
+    font-size: 40px;
+    background-color: black;
+    color: green;
+    border-color: green;
+}
+
+#entrada{
+    border-color: green;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+#saida{
+    margin-top: 10%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}

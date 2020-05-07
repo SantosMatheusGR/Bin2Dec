@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <div id="entrada">
+            <input type="text" id="binario" autofocus>
+            <button onclick="conversorController.converter_OnClick()">Converter</button>
+        </div>
+        <div id="saida">
+            <span id="resposta"></span>
+        </div>
+    </body>
+    <script src="js/Conversor.js"></script>
+    <script src="js/ConversorController.js"></script>
+    <script>
+        let conversorController = new ConversorController();
+    </script>
+</html>
