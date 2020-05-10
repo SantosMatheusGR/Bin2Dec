@@ -29,6 +29,21 @@ button{
     border-color: green;
 }
 
+footer{
+    margin-top: 8%;
+    color: green;
+    display: inline-block;
+}
+
+a{
+    color:green;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(23, 87, 32);
+}
+
 #entrada{
     border-color: green;
     position: relative;
