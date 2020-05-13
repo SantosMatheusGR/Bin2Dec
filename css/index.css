@@ -1,7 +1,7 @@
 body{
-    background-color: #202120;;
+    background-color: #001101;;
     font-family: 'Press Start 2P', cursive;
-    color: green;
+    color: #208927;
     text-align: center;
 }
 
@@ -12,32 +12,35 @@ h1{
 input{
     font-family: 'Press Start 2P', cursive;
     margin: 1.5% 0% 1% 0%;
-    font-size: 190%;
-    background-color: #202120;;
-    color: green;
-    border-color: green;
+    font-size: 1.5em;
+    background-color: #001101;;
+    color: #208927;
+    border-color: #208927;
+    padding: 0.3em;
 }
 span{
     font-size: 30px;
-    color: green;
+    color: #208927;
     margin: 0em;
 }
 button{
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.8em;
-    background-color: #202120;
-    color: green;
-    border-color: green;
+    font-size: 1.5em;
+    width: 4em;
+    background-color: #001101;
+    color: #208927;
+    border-color: #208927;
+    padding: 0.3em 0.4em 0.3em 0.4em;
 }
 
 footer{
     margin-top: 10%;
-    color: green;
+    color: #208927;
     display: inline-block;
 }
 
 a{
-    color:green;
+    color:#208927;
     text-decoration: none;
 }
 
@@ -51,12 +54,12 @@ p{
 }
 
 button:hover{
-    background-color: green;
-    color: #202120;
-    border-color: #202120;
+    background-color: #208927;
+    color: #001101;
+    border-color: #001101;
 }
 #entrada{
-    border-color: green;
+    border-color: #208927;
     position: relative;
     align-items: center;
     text-align: center;
