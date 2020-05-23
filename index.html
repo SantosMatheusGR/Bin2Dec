@@ -12,19 +12,21 @@
         </div>
         <div id="entrada">
             <form>
-                <input type="text" id="binario" placeholder="Apenas binários" autofocus required>
+                <input type="text" id="binario" placeholder="Apenas binários" maxlength="8" autofocus required>
                 <button type="submit" onclick="conversorController.converter_OnClick(event)"><i class="fas fa-check"></i></button>
             </form>
         </div>
         <div id="saida">
-            <span id="resposta">Exemplo de Binário: 101010‬</span>
+            <span id="resposta">O que é um número binário? <a href="https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_bin%C3%A1rio" target="blank"><u>Leia aqui</u></a> a explicação!‬</span>
         </div>
         <footer>&#169 2020 - <a href="https://linktr.ee/santosmatheusgr" target="blank">Matheus Gomes Roberto dos Santos</a></footer>
     </body>
     <script src="https://kit.fontawesome.com/625e214d07.js" crossorigin="anonymous"></script>
     <script src="js/Conversor.js"></script>
     <script src="js/ConversorController.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         let conversorController = new ConversorController();
+        conversorController.controlarInput();
     </script>
 </html>

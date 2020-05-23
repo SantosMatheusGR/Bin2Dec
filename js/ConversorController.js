@@ -24,11 +24,12 @@ class ConversorController {
             this._spanResposta.textContent = 'É necessário um número';
             return false;
         }
-        let reg = new RegExp('^[0-1]+$');
-        if(!reg.test(this._inputBinario.value)){
-            this._spanResposta.textContent = 'A entrada precisa ser um número binário';
-            return false;
-        }
         return true;
+    }
+
+    controlarInput(){
+        $("#binario").keyup(function() {
+            $("#binario").val(this.value.match(/[0-1]*/));
+        });
     }
 }
